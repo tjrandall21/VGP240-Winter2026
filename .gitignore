@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+*.dwo
+
+.vs/
+*/Debug
+*/*/Debug
+*/Release
+*/*/Release
