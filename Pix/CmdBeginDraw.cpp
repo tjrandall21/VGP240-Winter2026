@@ -1,7 +1,7 @@
 #include "cmdBeginDraw.h"
 #include "PrimitivesManager.h"
 
-bool cmdBeginDraw::Execute(const std::vector<std::string>& params)
+bool CmdBeginDraw::Execute(const std::vector<std::string>& params)
 {
     if (params.size() < 1)
     {

@@ -59,3 +59,7 @@ bool PrimitivesManager::EndDraw()
         return false;
     }
 }
+
+PrimitivesManager::PrimitivesManager()
+{
+}

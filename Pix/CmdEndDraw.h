@@ -1,6 +1,6 @@
 #pragma once
 #include "Command.h"
-class cmdEndDraw : public Command
+class CmdEndDraw : public Command
 {
 public:
     const char* GetName() override

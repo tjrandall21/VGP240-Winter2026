@@ -1,6 +1,6 @@
 #pragma once
 #include "Command.h"
-class cmdVertex : public Command
+class CmdVertex : public Command
 {
 public:
     const char* GetName() override

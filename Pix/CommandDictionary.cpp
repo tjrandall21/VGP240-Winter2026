@@ -4,9 +4,9 @@
 #include "CmdSetResolution.h"
 #include "CmdVarFloat.h"
 #include "CmdSetColor.h"
-#include "cmdBeginDraw.h"
-#include "cmdEndDraw.h"
-#include "cmdVertex.h"
+#include "CmdBeginDraw.h"
+#include "CmdEndDraw.h"
+#include "CmdVertex.h"
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -29,7 +29,9 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdDrawPixel>();
 
 	// Primitives Commands
-	RegisterCommand<Cmd>
+	RegisterCommand<CmdBeginDraw>();
+	RegisterCommand<CmdVertex>();
+	RegisterCommand<CmdEndDraw>();
 }
 
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()
